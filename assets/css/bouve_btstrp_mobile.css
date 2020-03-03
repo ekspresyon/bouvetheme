@@ -1,0 +1,181 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2{
+	font-family: 'Patua One', cursive;
+}
+
+/*for testing purposes. remose before long*/
+
+footer{
+  height: 200px;
+}
+
+.site-title{
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+}
+
+.default-logo img{
+  max-width: 300px;
+  width: 100%;
+}
+
+.bv-bs-header{
+    border-top: 1px solid #1a1a1a;
+}
+
+.bg_blk_primary {
+    background-color: #000000;
+}
+
+.bg_red_primary {
+    background-color: #cc0000;
+}
+
+.striped_drk {
+    background-image: url(../img/line-background-grey.png);
+    background-repeat: repeat;
+}
+
+.widget-title{
+	display: none;
+}
+
+#bvbs-sidebar-footer a {
+	color: #ffffff;
+}
+
+#bvbs-sidebar-footer ul {
+	list-style-type: none;
+}
+
+#menu-bouve-links, #menu-footer-right{
+	text-align: center;
+}
+
+.bv-search-box{
+  display: none;
+}
+
+
+}
+
+/* 
+=========================================================================
+Site logo
+========================================================================= 
+*/
+.bv-site-logo{
+	max-width: 314px;
+}
+
+.bv-site-logo img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* 
+=========================================================================
+Smart Menu - Navigation CSS
+========================================================================= 
+*/
+.main-nav{
+	bottom: -20px;
+  background: #000000;
+  padding: 1rem;
+}
+
+.main-nav:after{
+  clear: both;
+  content: "\00a0";
+  display: block;
+  height: 0;
+  font: 0px/0 serif;
+  overflow: hidden;
+}
+
+/*.prime-nav:after{
+  clear: both;
+  content: "\00a0";
+  display: block;
+  height: 0;
+  font: 0px/0 serif;
+}
+*/
+/*.prime-nav{
+   padding: 1rem;
+}*/
+
+.nav-brand {
+  float: left;
+  margin: 0;
+}
+
+.nav-brand a {
+  display: block;
+  padding: 5px 0 0 0;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+.sec-nav{
+      display: none;
+}
+
+
+
+
+
+
+
+/* Mobile menu toggle button */
+
+/*.main-menu-btn {
+  float: right;
+  margin: 5px 10px;
+  position: relative;
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  text-indent: 29px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+} */
+
+
+/* hamburger icon */
+
+/*.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  height: 2px;
+  width: 24px;
+  background: #888;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}*/
+
+/*.main-menu-btn-icon:before {
+  content: '';
+  top: -7px;
+  left: 0;
+}*/
+
+/*.main-menu-btn-icon:after {
+  content: '';
+  top: 7px;
+  left: 0;
+}*/

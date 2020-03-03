@@ -1,0 +1,125 @@
+#main-menu{
+  clear: both;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+@media (min-width: 768px) {
+  #main-menu {
+    float: right;
+    clear: none;
+    bottom: -25px;
+  }
+}
+/* x icon */
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+  height: 0;
+  background: transparent;
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* hide menu state checkbox (keep it visible to screen readers) */
+
+#main-menu-state {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+/* hide the menu in mobile view */
+
+#main-menu-state:not(:checked) ~ #main-menu {
+  display: none;
+}
+
+#main-menu-state:checked ~ #main-menu {
+  display: block;
+}
+
+
+
+/* Desktop navigation layout */
+
+@media (min-width: 768px) {
+  /* hide the button in desktop view */
+  .main-menu-btn {
+    position: absolute;
+    top: -99999px;
+  }
+  /* always show the menu in desktop view */
+  #main-menu-state:not(:checked) ~ #main-menu {
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px){
+
+  .sm-simple ul {
+    background-color: #000000;
+    border: none;
+  }
+  .sm-simple li {
+    border:none;
+  }
+
+  
+/* Mobile navigation layout */
+  .sm-simple {
+    background-color: #000000;
+    text-transform: uppercase;
+  }
+  .sm-simple ul > li{
+    border: none;
+    text-transform: none;
+  }
+  .sm-simple ul > li a, .sm-simple ul > li a:hover, .sm-simple ul > li a:focus, 
+  .sm-simple ul > li a:active, .sm-simple ul > li a.highlighted{  
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+    }
+
+  .sm-simple ul > li a .sub-arrow {
+      /*right: 12px;
+      left: auto;*/
+      position: relative;
+  }
+  .sm-simple a .sub-arrow {
+      margin-top: -9px;
+  }
+}
+
+	.sm-simple a, .sm-simple a:hover, .sm-simple a:focus, .sm-simple a:active, .sm-simple a.highlighted {
+	    color: #ffffff;
+	    font-size: 12px;
+		font-weight: 800;
+		letter-spacing: 0.1em;
+		font-family: 'Lato', sans-serif;
+	}
+	.sm-simple a:hover, .sm-simple a:focus, .sm-simple a:active, .sm-simple a.highlighted{
+	    background: #333333;
+	}
+  .bv-undrbar a:hover, .bv-undrbar a:focus, .bv-undrbar a:active, .bv-undrbar a.highlighted{
+      background: none;
+  }
